@@ -11,7 +11,7 @@ function RegisterForm() {
         password: "",
     });
 
-    const { setAuth, setUsers } = useAuth();
+    const { setAuth, setUsers,users } = useAuth();
     const [error,setError] = useState({email:'',password:'',name:''})
 
     let navigate = useNavigate();
@@ -19,7 +19,7 @@ function RegisterForm() {
     ///handling the form submit
     const handleSubmit = (e) => {
         e.preventDefault();
-        handleRegister(setError,setAuth,navigate,formdata,setUsers)
+        handleRegister(setError,setAuth,navigate,formdata,setUsers, users)
     };
 
     return (

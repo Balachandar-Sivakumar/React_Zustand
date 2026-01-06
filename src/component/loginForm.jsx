@@ -26,7 +26,7 @@ const LoginForm = () => {
     ///handling the form submit
     function handleSubmit(e){
        e.preventDefault()
-      HandleLogin(error,setError,userLogin,setUserLogin,users,setAuth,navigate)
+      HandleLogin(setError,userLogin,setUserLogin,users,setAuth,navigate)
     }
 
     return (
