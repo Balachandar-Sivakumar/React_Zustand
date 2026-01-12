@@ -31,10 +31,7 @@ function Delete() {
     const hasSingleItem =todoItems.filter((item) => item.parentId === formData.parentId).length === 1;
 
     if (hasSingleItem) {
-      showMessage(
-        "warning",
-        "If the parent Todo doesn't have any items, the todo list will automatically be deleted."
-      );
+      showMessage("warning","If the parent Todo doesn't have any items, the todo list will automatically be deleted.");
     }
   }, []);
 
@@ -47,7 +44,7 @@ function Delete() {
       onCancel={resetState}
     >
       <p className="text-center">
-        Are you sure you want to delete this Todo item: <b>{formData.title}</b>
+        Are you sure you want to delete this Todo item: <b>{formData.title.toUpperCase()}</b>
       </p>
 
       <div className="flex gap-2 justify-between">

@@ -50,7 +50,7 @@ export default function View() {
             <p className={`${
               field === "Title" ? "font-semibold text-lg text-gray-800" : "text-gray-700 leading-relaxed"
             }`}>
-              {formData[field.toLowerCase()]}
+              {formData[field.toLowerCase()][0].toUpperCase()+formData[field.toLowerCase()].slice(1)}
             </p>
           </div>
         ))}

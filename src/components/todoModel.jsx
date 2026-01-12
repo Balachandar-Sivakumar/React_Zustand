@@ -38,7 +38,7 @@ const TodoModel = () => {
                         src={item.image}
                         alt={item.title}
                       />
-                      <span className="text-gray-800">{item.title}</span>
+                      <span className="text-gray-800">{item.title[0].toUpperCase()+item.title.slice(1)}</span>
                     </div>
 
                     <div className="flex items-center gap-3">
