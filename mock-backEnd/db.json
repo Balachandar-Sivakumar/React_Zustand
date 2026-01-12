@@ -1,0 +1,82 @@
+{
+  "users": [
+    {
+      "name": "balachandar",
+      "email": "bala@gmail.com",
+      "password": "123456",
+      "id": "1"
+    },
+    {
+      "id": "eefa",
+      "name": "bala",
+      "email": "asb@gmail.com",
+      "password": "123456"
+    }
+  ],
+  "todoList": [
+    {
+      "id": "1",
+      "status": 1,
+      "name": "bala",
+      "userId": "1"
+    },
+    {
+      "id": "2",
+      "status": 1,
+      "name": "lokesh",
+      "userId": "1"
+    },
+    {
+      "id": "3",
+      "status": 1,
+      "name": "lokeshwara",
+      "userId": "1"
+    }
+  ],
+  "todoItems": [
+    {
+      "id": "1",
+      "image": "https://oawnzzbzqfemkuqgehso.supabase.co/storage/v1/object/public/images/1767942873139-Screenshot%20from%202026-01-07%2010-50-30.png",
+      "title": "fylo",
+      "description": "task",
+      "priority": "medium",
+      "status": "pending",
+      "important": false,
+      "parentId": "1",
+      "userId": "1"
+    },
+    {
+      "id": "2",
+      "image": "https://oawnzzbzqfemkuqgehso.supabase.co/storage/v1/object/public/images/1767944056050-Screenshot%20from%202026-01-02%2015-22-56.png",
+      "title": "todolist",
+      "description": "man",
+      "priority": "low",
+      "status": "pending",
+      "important": false,
+      "parentId": "2",
+      "userId": "1"
+    },
+    {
+      "id": "3",
+      "image": "https://oawnzzbzqfemkuqgehso.supabase.co/storage/v1/object/public/images/1767944088175-Screenshot%20from%202025-12-31%2016-06-34.png",
+      "title": "good",
+      "description": "bad",
+      "priority": "medium",
+      "status": "pending",
+      "important": false,
+      "parentId": "3",
+      "userId": "1"
+    },
+    {
+      "id": "4",
+      "image": null,
+      "title": "todolist for mai",
+      "description": "bal",
+      "priority": "low",
+      "status": "pending",
+      "important": false,
+      "parentId": "2",
+      "userId": "1"
+    }
+  ]
+}

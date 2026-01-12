@@ -1,18 +1,14 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-import RegisterForm from './component/registerForm';
-import Dashboard from './component/dashboard';
-import LoginForm from './component/loginForm';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
+import ClearError from './helper/clearError';
+import AppRouts from './routes/appRutes';
 
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-      <Route path='/' element={<LoginForm/>}/>
-      <Route path="/register" element={<RegisterForm/>}/>
-      <Route path="/dashboard" element = {<Dashboard/>}/>
-      </Routes>
+      <ClearError/>
+      <AppRouts/>
     </BrowserRouter>
   );
 }
